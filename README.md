@@ -87,4 +87,38 @@ Example
     </body>
     </html>
 
-    
+# dbclick()
+The dbclick() method attaches an event handler function to an HTML element.
+
+The function is executed when the user double-clicks on the HTML element:
+
+Example
+
+    <!DOCTYYPE html>
+    <html>
+    <head>
+    <script>
+    src="https://ajax.googleapis.come
+    /ajax/libs/jquery/3.6.3
+    /jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("p").dbclick(function(){
+            $(this).hide();
+        });
+    });
+    </script>
+    </head>
+    <body>
+
+    <p>If you double-click on me, I will 
+    disappear.</p>
+
+    <p>Click me away!</p>
+
+    <p>Click me too!</p>
+
+    </body>
+    </html>
+
+
