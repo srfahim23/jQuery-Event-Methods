@@ -351,4 +351,29 @@ Example
     </body>
     </html>
 
-    
+# The on() Method
+The on() mehod attaches one or more event handlers for the selected elements.
+
+Attach a click event to a <p> element:
+
+Example
+
+    $("p").on("click", function(){
+        $(this).hide();
+    });
+
+Attach multiple event handlers to a <p> element:
+
+Example 
+
+    $("p").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightray");
+        },
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        },
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }
+    });
